@@ -142,7 +142,7 @@ Se lo esegui, è facile notare che impiega significativamente meno tempo.
 
 Perché?  
 
-Semplice: come saprai, c'è un ritardo minimo di 4ms all'interno del browser per tantissime chiamate annidate di `setTimeout`. Anche se noi lo abbiamo impostato a `0`, sarà di `4ms` (o qualcosa in pi&ugrave). Quindi, prima lo scheduliamo, più veloce sarà l'esecuzione. 
+Semplice: come saprai, c'è un ritardo minimo di 4ms all'interno del browser per tantissime chiamate annidate di `setTimeout`. Anche se noi lo abbiamo impostato a `0`, sarà di `4ms` (o qualcosa in più). Quindi, prima lo scheduliamo, più veloce sarà l'esecuzione. 
 Alla fine, abbiamo diviso un task affamato di CPU in porzioni - che adesso non bloccherà più l'interfaccia utente. Inoltre, il suo tempo di esecuzione complessivo non è tanto più lungo.
 
 
