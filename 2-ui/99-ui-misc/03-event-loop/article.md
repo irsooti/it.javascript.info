@@ -299,7 +299,7 @@ Questo è il più dettagliato algoritmo dell'event loop: (sebbene ancora semplic
 
 1. Rimuovi dalla coda ed esegui il task meno recente dalla coda dei *macrotask*  (ad esempio "script").
 2. Esegui tutti i *microtasks*:
-    - Se la cosa dei microtask non è vuota:
+    - Se la coda dei microtask non è vuota:
         - Rimuovi dalla coda ed esegui il meno recente dei microtask.
 3. Renderizza le modifiche se ve ne sono.
 4. Se la coda dei macrotask è vuota, vai in sleep fino al prossimo  macrotask.
